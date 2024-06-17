@@ -40,7 +40,7 @@ jobs:
 
       - name: Configure Git author identity
         run: |
-          git config user.email --global "Extreniu@gmail.com"
+          git config user.email --global "JermainLewi@gmail.com"
           git config user.name --global Extrenious
 
       - name: Deploy to GitHub Pages
