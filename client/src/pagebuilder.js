@@ -1,5 +1,5 @@
 function loadHeadPartial(partialName) {
-    fetch(`/client/pages/PageBits/${partialName}.html`) // Adjusted path here
+    fetch(`/client/pages/pagebits/${partialName}.html`) // Adjusted path here
         .then(response => response.text())
         .then(html => {
             document.head.insertAdjacentHTML('beforeend', html);
@@ -10,7 +10,7 @@ function loadHeadPartial(partialName) {
 }
 
 function loadPartial(containerId, url) {
-    fetch(`/Client/pages/PageBits/${url}`) // Adjusted path here
+    fetch(`/client/pages/pagebits/${url}.html`) // Adjusted path here
         .then(response => response.text())
         .then(html => {
             document.getElementById(containerId).innerHTML = html;
@@ -25,7 +25,7 @@ function loadPage(page) {
 }
 function setInnerHTMLForClass(className, url) {
     console.log("Fetching content from:", url);
-    fetch(`/Client/pages/PageBits/${url}`)
+    fetch(`/client/pages/pagebits/${url}.html`)
         .then(response => response.text())
         .then(html => {
             const elements = document.getElementsByClassName(className);
@@ -42,8 +42,8 @@ function setInnerHTMLForClass(className, url) {
 
 // Load common partials
 document.addEventListener('DOMContentLoaded', function() {
-    setInnerHTMLForClass('CommonFooter', 'CommonFooter.html');
-    setInnerHTMLForClass('CommonNavBar', 'CommonNavBar.html');
+    setInnerHTMLForClass('CommonFooter', 'CommonFooter');
+   // setInnerHTMLForClass('CommonNavBar', 'CommonNavBar');
 
     console.log("Footer")
    // setInnerHTMLForClass("CommonFooter", "Footer")
