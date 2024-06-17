@@ -38,10 +38,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Configure Git user
-        run: |  
-              git config --global user.name "Extrenious"
-              git config --global user.email "jermainlewi@gmail.com"
+      - name: Setup credentials to access private repositories
+        run: git config --global url.https://${{ secrets.TOKEN }}@github.com/.insteadOf https://github.com/
         
 
       - name: Deploy to GitHub Pages
