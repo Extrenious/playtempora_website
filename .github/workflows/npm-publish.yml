@@ -14,6 +14,7 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
+
         with:
           node-version: 16
 
@@ -38,11 +39,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Setup credentials to access private repositories
-        run:
-  
-          git config --global user.email "JermainLewi@gmail.com.com"  
-          git config --global user.name "Extrenious"
           
 
       - name: Deploy to GitHub Pages

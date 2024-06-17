@@ -13,6 +13,3 @@ author:
 markdown: kramdown
 theme: minima
 remote_theme: "mmistakes/minimal-mistakes"
-
-# GitHub Pages specific settings
-
