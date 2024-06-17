@@ -38,7 +38,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Deploy to GitHub Pages
-        run: npm run deploy
+      - name: Configure Git author identity
+        run: |
+          git config user.email "JermainLewi@gmail.com"
+          git config user.name "Extrenious"
+          npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
