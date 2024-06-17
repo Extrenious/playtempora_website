@@ -39,8 +39,7 @@ jobs:
         run: npm install
 
       - name: Setup credentials to access private repositories
-        run: git config --global url.https://${{ secrets.TOKEN }}@github.com/.insteadOf https://github.com/
-        
+        run: git config --global url."https://${{ secrets.TOKEN }}@github.com/".insteadOf "https://github.com/"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
