@@ -14,7 +14,6 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
-
         with:
           node-version: 16
 
@@ -23,7 +22,27 @@ jobs:
 
       - name: Build the project
         run: npm run build
-          
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Configure Git author identity
+        run: |
+          git config user.email "JermainLewi@gmail.com"
+          git config user.name "Extrenious"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
