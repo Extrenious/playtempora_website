@@ -40,7 +40,7 @@ jobs:
 
       - name: Debug GitHub Token
         run: |
-          echo "Token: ${{ secrets.TOKEN }}"
+          echo "Token: ${{ secrets.TEMPORA_TOKEN }}"
 
       - name: Configure Git author identity
         run: |
@@ -48,4 +48,4 @@ jobs:
           git config user.name "Extrenious"
           npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
