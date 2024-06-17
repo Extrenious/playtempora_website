@@ -6,7 +6,7 @@
     "scripts": {
       "start": "node server/app.js",
       "build": "node server/build.js",
-      "deploy": "gh-pages -d public"
+      "deploy": "gh-pages -d client"
     },
     "keywords": [],
     "author": "",
