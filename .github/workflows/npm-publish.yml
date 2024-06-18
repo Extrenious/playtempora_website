@@ -24,8 +24,8 @@ jobs:
         run: npm run build
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
-    needs: build  # Ensure 'deploy' job waits for 'build' job to complete
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -40,11 +40,15 @@ jobs:
 
       - name: Configure Git author identity
         run: |
-          git config user.email --global "JermainLewi@@gmail.com"
-          git config user.name --global Extrenious
-      - name: Start backend server
-        run: npm start &
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "Your Name"
+
+      - name: Start backend server (if applicable)
+        run: |
+          npm start &
+          sleep 10  # Wait for server to start, adjust as needed
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
+          REPO_URL: https://${{ github.actor }}:${{ secrets.TEMPORA_TOKEN }}@github.com/Extrenious/PlayTempora_Website.git
