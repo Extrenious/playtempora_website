@@ -40,8 +40,8 @@ jobs:
 
       - name: Configure Git author identity
         run: |
-          git config --global user.email "your-email@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "JermainLewi@gmail.com"
+          git config --global user.name "Extrenious"
 
       - name: Start backend server (if applicable)
         run: |
