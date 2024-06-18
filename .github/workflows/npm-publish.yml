@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages and Backend
 
 on:
   push:
@@ -40,10 +40,15 @@ jobs:
 
       - name: Configure Git author identity
         run: |
-          git config --global user.email "Extreniu@gmail.com"
-          git config --global user.name "Extrenious"
+          git config user.email "JermainLewi@gmail.com"
+          git config user.name "Extrenious"
+
+      - name: Start backend server
+        run: npm start
+        env:
+          TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          REPO_URL: https://${{ github.actor }}:${{ secrets.TEMPORA_TOKEN }}@github.com/Extrenious/PlayTempora_Website.git
+          TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
