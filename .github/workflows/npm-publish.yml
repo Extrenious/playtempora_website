@@ -1,4 +1,5 @@
-name: Deploy to GitHub Pages and Backend
+
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,25 +7,7 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the project
-        run: npm run build
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -43,10 +26,8 @@ jobs:
           git config user.email "JermainLewi@gmail.com"
           git config user.name "Extrenious"
 
-      - name: Start backend server
-        run: npm start &
-        env:
-          TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
+      - name: Set $REPO_URL environment variable
+        run: echo "export REPO_URL=https://github.com/Extrenious/PlayTempora_Website.git" >> $GITHUB_ENV
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
