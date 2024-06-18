@@ -1,4 +1,3 @@
-
 name: Deploy to GitHub Pages
 
 on:
@@ -7,8 +6,26 @@ on:
       - main
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
   deploy:
     runs-on: ubuntu-latest
+    needs: build  # Ensure 'deploy' job waits for 'build' job to complete
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,12 +40,10 @@ jobs:
 
       - name: Configure Git author identity
         run: |
-          git config user.email "JermainLewi@gmail.com"
-          git config user.name "Extrenious"
-
-      - name: Set $REPO_URL environment variable
-        run: echo "export REPO_URL=https://github.com/Extrenious/PlayTempora_Website.git" >> $GITHUB_ENV
-
+          git config user.email --global "JermainLewi@@gmail.com"
+          git config user.name --global Extrenious
+      - name: Start backend server
+        run: npm start &
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
