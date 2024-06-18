@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages and Backend
+name: Build and Deploy
 
 on:
   push:
@@ -43,12 +43,14 @@ jobs:
           git config user.email "JermainLewi@gmail.com"
           git config user.name "Extrenious"
 
-      - name: Start backend server
-        run: npm start
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
         env:
           TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
 
-      - name: Deploy to GitHub Pages
-        run: npm run deploy
+      - name: Start backend server
+        run: |
+          npm install pm2 -g
+          pm2 start server/app.js --name 'my-app'
         env:
           TEMPORA_TOKEN: ${{ secrets.TEMPORA_TOKEN }}
