@@ -19,7 +19,6 @@
     "process": "^0.11.10",
     "querystring-es3": "^0.2.1",
     "react": "^18.3.1",
-    "react-app-rewired": "^2.2.1",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -31,10 +30,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-app-rewired build"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
