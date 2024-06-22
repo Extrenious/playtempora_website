@@ -14,10 +14,7 @@ import DevInfo from './Pages/DevInfo';
 
 import UpdateLog from './components/Updatelog';
 
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 import './css/primary.css';
 import './css/secondary.css';
@@ -36,8 +33,6 @@ function App() {
         <Route path="/UpdateLog" element={<UpdateLog />} />
         <Route path="/Info/Dev" element={<DevInfo />} />
         <Route path="/Info/Lore" element={<LoreInfo />} />
-
-
       </Routes>
     </Router>
   );
@@ -72,7 +67,7 @@ function InitialContent() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h3 id="BigTempora" ref={bigTemporaRef}></h3>
+              <h3 id="BigTempora" ref={bigTemporaRef}>Tempora</h3> {/* Add initial content */}
             </div>
           </div>
           <div className="row">
@@ -80,10 +75,9 @@ function InitialContent() {
               <h3 id="MedTempora" ref={medTemporaRef}>Loading...</h3>
             </div>
           </div>
-
           <div className="row">
             <div className="col">
-              <p id="ComingSoon" ref={comingSoonRef}></p>
+              <p id="ComingSoon" ref={comingSoonRef}>Coming Soon</p> {/* Add initial content */}
             </div>
           </div>
         </div>
