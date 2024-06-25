@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light BG4">
-      <a className="navbar-brand Font1 FBR FancyTC2 " href="/">Tempora</a>
+      <a className="navbar-brand Font1  MFont FancyTC2 " href="/Home">Tempora</a>
       <button
         className="navbar-toggler"
         type="button"
@@ -23,14 +23,14 @@ function Navbar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNavAltMarkup">
+      <div className={`  collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNavAltMarkup">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link Font2Style1" to="/Home">Home</Link>
+            <Link className="nav-link  SFont Font2Style1" to="/Home">Home</Link>
           </li>
      
           <li className="nav-item">
-            <Link className="nav-link Font2Style1" to="/Info">Info</Link>
+            <Link className="nav-link SFont Font2Style1" to="/Info">Info</Link>
           </li>
           
         </ul>

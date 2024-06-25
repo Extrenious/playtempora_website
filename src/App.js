@@ -41,6 +41,8 @@ function App() {
         <Route path="/SiteInfo" element={<SiteInfo />} />
 
         <Route path="/UpdateLog" element={<UpdateLog />} />
+        <Route path="/NotFound" element={<NotFound />} />
+
         <Route path="*" element={<NotFound />} />
 
       </Routes>

@@ -14,7 +14,7 @@ function ThinkTank() {
       <div className="PageHeader"></div>
 
     <div className="row">
-      <h1 className="display-1 Font2">ThinkTank</h1>
+      <h1 className="display-1 Font2">Think Tank</h1>
     </div>
  
     <div className="PageHeader row"> </div>
