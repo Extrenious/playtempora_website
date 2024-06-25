@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact  path="/" element={<InitialContent />} />
+        <Route path="/" element={<InitialContent />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/HOF" element={<HOF />} />
