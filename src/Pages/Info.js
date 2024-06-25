@@ -21,10 +21,10 @@ function Info() {
         <div className=" row">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link Font2Style1" href="/Info/Lore">Lore Information</a>
+              <a className="nav-link Font2Style1" to="/Info/Lore">Lore Information</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link Font2Style1" href="/Info/Dev">Developer information</a>
+              <a className="nav-link Font2Style1" to="/Info/Dev">Developer information</a>
             </li>
         
           </ul>
@@ -36,7 +36,7 @@ function Info() {
 
         <div className="Divider row">
 
-        <a className="nav-link Font2Style1" href="/SiteInfo">Website information</a>
+        <a className="nav-link Font2Style1" to="/SiteInfo">Website information</a>
         </div>
 
         <div className="row">
