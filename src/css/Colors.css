@@ -160,6 +160,7 @@
     Color: var(--Color6)
   }
 
+
   @keyframes FancyTC1Anim {
     100%,0%{
       color: rgb(255,0,0);
@@ -216,6 +217,61 @@
 .FancyTC2 {
   animation: FancyTC2Anim 10s infinite alternate;
 }
+
+
+@keyframes FancyTC3Anim {
+  0% {
+    Color: var(--Color1);
+  }
+  100% {
+   Color: var(--Color3);
+  }
+}
+
+
+.FancyTC3 {
+  animation: FancyTC3Anim 10s infinite alternate;
+}
+
+@keyframes FancyTC4Anim {
+  0% {
+    Color: #ffe70b;
+  }
+  100% {
+   Color: #1e83ff;
+  }
+}
+
+
+.FancyTC4 {
+  animation: FancyTC4Anim 10s infinite alternate;
+}
+
+
+@keyframes FancyTC5Anim {
+  0% {
+    Color: #5c5c5cdd;
+  }
+  100% {
+   Color: #ffffff51;
+  }
+}
+
+
+.FadingTC1 {
+  animation: FancyTC5Anim 10s infinite alternate;
+}
+
+.FadedTC1 {
+  Color: #ffffff3c;
+}
+
+.FadedTC2 {
+  Color: #ffffff1c;
+}
+
+
+
   .circle-name {
     margin-top: 10px;
     text-align: center;

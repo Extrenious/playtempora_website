@@ -108,16 +108,20 @@
     }
   }
 
-#BigTempora {
+  #BigTempora {
     text-align: center;
     color: rgb(252, 194, 4);
     font-family: 'Cinzel decorative', serif;
-    font-size: 8rem;
+    font-size: 15vw; /* 10% of the viewport width */
     font-weight: lighter;
-    margin-top: 20%;
+    margin-top: 5%;
     text-shadow: 1px 1px 1px rgba(239, 149, 24, 0.607);
     animation: fadeTextColor 7s infinite alternate;
 }
+
+
+
+
 
 #MedTempora {
     text-align: center;

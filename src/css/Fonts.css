@@ -1,11 +1,13 @@
 :root {
-    --font-size-base: 16px;
-    --font-size-small: calc(var(--font-size-base) / 1.618); 
-    --font-size-medium: calc(var(--font-size-base) * 1.618);
-    --font-size-large: calc(var(--font-size-medium) * 1.618);
-    --font-size-xlarge: calc(var(--font-size-large) * 1.618);
-    --font-size-xxlarge: calc(var(--font-size-xlarge) * 1.618);
-  }
+  --font-size-base: 2vw; /* Adjust this base value as needed */
+  --golden-ratio: 1.618;
+
+  --font-size-small: calc(var(--font-size-base) / var(--golden-ratio)); 
+  --font-size-medium: calc(var(--font-size-base) * var(--golden-ratio));
+  --font-size-large: calc(var(--font-size-medium) * var(--golden-ratio));
+  --font-size-xlarge: calc(var(--font-size-large) * var(--golden-ratio));
+  --font-size-xxlarge: calc(var(--font-size-xlarge) * var(--golden-ratio));
+}
 
 .SFont {font-size: var(--font-size-small);}
 .MFont {font-size: var(--font-size-medium);}

@@ -15,6 +15,8 @@ import SiteInfo from './Pages/SiteInfo';
 
 import LoreInfo from './Pages/LoreInfo';
 import DevInfo from './Pages/DevInfo';
+import NotFound from './Pages/NotFound';
+
 
 import UpdateLog from './components/Updatelog';
 
@@ -36,6 +38,8 @@ function App() {
         <Route path="/ThinkTank" element={<ThinkTank />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Community" element={<Community />} />
+
+        <Route path="*" element={<NotFound />} /> {/* This catches all undefined routes */}
 
         <Route path="/SiteInfo" element={<SiteInfo />} />
 
@@ -74,9 +78,7 @@ function InitialContent() {
       <header className="mb-4">
         <div className="container">
           <div className="row">
-            <div className="col">
               <h3 id="BigTempora" ref={bigTemporaRef}> </h3> {/* Added placeholder content */}
-            </div>
           </div>
           <div className="row">
             <div className="col">

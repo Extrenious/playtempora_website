@@ -74,8 +74,10 @@ function SiteInfo() {
 
       <div className="row">
         <h1 className = "FancyTC1"> Rainbow text Transition </h1>
-        <h1 className = "FancyTC2"> Text Transition 1</h1>
-        <h1> Text Transition 2</h1>
+        <h1 className = "FancyTC2"> Text Transition 2</h1>
+        <h1 className = "FancyTC3"> Text Transition 3</h1>
+        <h1 className = "FancyTC4"> Text Transition 4</h1>
+        <h1 className = "FadingTC1"> Fading Transition 5</h1>
 
       </div>
 
