@@ -13,8 +13,6 @@ import Contact from './Pages/Contact';
 import SiteInfo from './Pages/SiteInfo';
 
 
-import LoreInfo from './Pages/LoreInfo';
-import DevInfo from './Pages/DevInfo';
 import NotFound from './Pages/NotFound';
 
 
@@ -39,13 +37,12 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Community" element={<Community />} />
 
-        <Route path="*" element={<NotFound />} /> {/* This catches all undefined routes */}
 
         <Route path="/SiteInfo" element={<SiteInfo />} />
 
         <Route path="/UpdateLog" element={<UpdateLog />} />
-        <Route path="/Info/Dev" element={<DevInfo />} />
-        <Route path="/Info/Lore" element={<LoreInfo />} />
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </Router>
   );
