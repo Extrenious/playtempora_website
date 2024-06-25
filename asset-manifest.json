@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0d1ee86.css",
-    "main.js": "/static/js/main.9c209cea.js",
-    "static/js/453.57ff7912.chunk.js": "/static/js/453.57ff7912.chunk.js",
-    "index.html": "/index.html",
-    "main.c0d1ee86.css.map": "/static/css/main.c0d1ee86.css.map",
-    "main.9c209cea.js.map": "/static/js/main.9c209cea.js.map",
-    "453.57ff7912.chunk.js.map": "/static/js/453.57ff7912.chunk.js.map"
+    "main.css": "/www.PlayTempora.com/static/css/main.c0d1ee86.css",
+    "main.js": "/www.PlayTempora.com/static/js/main.a7ed44e2.js",
+    "static/js/453.57ff7912.chunk.js": "/www.PlayTempora.com/static/js/453.57ff7912.chunk.js",
+    "index.html": "/www.PlayTempora.com/index.html",
+    "main.c0d1ee86.css.map": "/www.PlayTempora.com/static/css/main.c0d1ee86.css.map",
+    "main.a7ed44e2.js.map": "/www.PlayTempora.com/static/js/main.a7ed44e2.js.map",
+    "453.57ff7912.chunk.js.map": "/www.PlayTempora.com/static/js/453.57ff7912.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0d1ee86.css",
-    "static/js/main.9c209cea.js"
+    "static/js/main.a7ed44e2.js"
   ]
 }
