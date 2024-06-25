@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './Pagebits/Navbar';
 import Footer from "./Pagebits/Footer";
+import { Link } from 'react-router-dom';
 
 
 function Info() {
@@ -21,10 +22,10 @@ function Info() {
         <div className=" row">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link Font2Style1" to="/Info/Lore">Lore Information</a>
+              <Link className="nav-link Font2Style1" to="/Info/Lore">Lore Information</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link Font2Style1" to="/Info/Dev">Developer information</a>
+              <Link className="nav-link Font2Style1" to="/Info/Dev">Developer information</Link>
             </li>
         
           </ul>
@@ -36,7 +37,7 @@ function Info() {
 
         <div className="Divider row">
 
-        <a className="nav-link Font2Style1" to="/SiteInfo">Website information</a>
+        <Link className="nav-link Font2Style1" to="/SiteInfo">Website information</Link>
         </div>
 
         <div className="row">
