@@ -18,15 +18,15 @@ const Home = () => {
         <div className="PageHeader"></div>
 
         <div className="row">
-          <h1 className="display-1 Font2">Home</h1>
+          <h1 className="display-1 Font2 TC6">Home</h1>
         </div>
        
-        <div className="row Divider">
+        <div className="row PageHeader">
         </div>
 
         <div className="row">
-          <h3 className="Font3Bold">Bookmasters Feed</h3>
-          <div id="UpdateLogContainer" className="card card-body">
+          <h3 className="Font2 FBR">Bookmasters Feed</h3>
+          <div id="UpdateLogContainer" className="card card-body BG4">
           <div id="UpdateLogBody">
         {data.length > 0 && data.map((row, index) => {
           if (index === 0) return null; // Skip header row
@@ -61,11 +61,11 @@ const Home = () => {
 
           return (
             <figure key={index} className="log-entry">
-              <blockquote className="blockquote">
+              <blockquote className="blockquote Font3 FB TC6">
                 <p>{message}</p>
               </blockquote>
-              <figcaption className="blockquote-footer">
-                Posted {timeAgo} by <strong>{author}</strong> in <em>{place}</em>
+              <figcaption className="Font2 blockquote-footer TC1">
+                Posted <strong>{timeAgo}</strong> by <strong>{author}</strong> in <em>{place}</em>
               </figcaption>
             </figure>
           );

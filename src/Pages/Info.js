@@ -35,6 +35,8 @@ function Info() {
         </div>
 
         <div className="Divider row">
+
+        <a className="nav-link Font2Style1" href="/SiteInfo">Website information</a>
         </div>
 
         <div className="row">

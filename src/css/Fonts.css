@@ -1,0 +1,26 @@
+:root {
+    --font-size-base: 16px;
+    --font-size-small: calc(var(--font-size-base) / 1.618); 
+    --font-size-medium: calc(var(--font-size-base) * 1.618);
+    --font-size-large: calc(var(--font-size-medium) * 1.618);
+    --font-size-xlarge: calc(var(--font-size-large) * 1.618);
+    --font-size-xxlarge: calc(var(--font-size-xlarge) * 1.618);
+  }
+
+.SFont {font-size: var(--font-size-small);}
+.MFont {font-size: var(--font-size-medium);}
+.LFont{font-size: var(--font-size-large);}
+.XLFont {font-size: var(--font-size-xlarge);}
+.XXLFont {font-size: var(--font-size-xxlarge);}
+
+.inline-elements > * {
+    display: inline;
+    margin-right: 10px; /* Optional: Add some spacing between elements */
+}
+
+.Font1{font-family: 'Cinzel decorative', serif;}
+.Font2 {font-family: 'Cinzel', Georgia,  Times, serif;}
+.Font3 { font-family: 'Cormorant garamond', serif;}
+
+.FBR { font-weight: Bolder;}
+.FB { font-weight: Bold;}

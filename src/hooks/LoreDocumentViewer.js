@@ -10,7 +10,7 @@ const LoreDocumentViewer = () => {
   const [selectedDocument, setSelectedDocument] = useState(null);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>Loading...</p>; 
   }
 
   const renderDocument = (doc) => {

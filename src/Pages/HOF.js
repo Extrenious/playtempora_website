@@ -17,7 +17,7 @@ function HOF() {
         </div>
         
         <div className="Divider row">
-         
+          Eventually Sets of leaderboards will be placed here 
         </div>
 
        

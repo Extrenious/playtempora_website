@@ -1,0 +1,229 @@
+:root {
+  --Color1: #DE7B02;/*Fulvous*/
+  --Color2:#FFCE00;/*Jonquil*/
+  --Color3:#D7BE01;/*Old Gold*/
+  --Color4:#ddbb97;/*Tan*/
+  --Color5:#6E5235;/*Coffee*/
+  --Color6:#281f15;/*Bistre*/
+  --Color7:#fffaf5 ;/*Tan*/
+
+}
+
+.colorgrid {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .circle-container {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .beveled-circle {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #ffffff6d;
+    box-shadow: inset 5px 5px 10px #00000095, inset -4px -4px 8px #8888886f;
+    border-radius: 50%;
+  }
+
+  .BG1 {
+    background-color: var(--Color1)
+  }
+
+  .BG2 {
+    background-color: var(--Color2)
+  }
+
+  .BG3 {
+    background-color: var(--Color3)
+  }
+
+  .BG4 {
+    background-color: var(--Color4);
+  }
+
+  .BG5 {
+    background-color: var(--Color5)
+  }
+
+  .BG6 {
+    background-color: var(--Color6)
+  }
+
+  
+
+  
+@keyframes FancyBG1Anim {
+  100%,0%{
+    background-color: rgb(255,0,0);
+  }
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
+  }
+}
+
+.FancyBG1{
+  animation: FancyBG1Anim 20s infinite alternate;
+}
+
+
+@keyframes FancyBG2Anim {
+  0% {
+    background-color: var(--Color4);
+  }
+  100% {
+    background-color: var(--Color7);
+  }
+}
+
+
+.FancyBG2{
+  animation: FancyBG2Anim 10s infinite alternate;
+
+}
+
+@keyframes FancyBG3Anim {
+  0% {
+    background-color: var(--Color1);
+  }
+  100% {
+    background-color: var(--Color3);
+  }
+}
+
+
+.FancyBG3{
+  animation: FancyBG3Anim 10s infinite alternate;
+}
+  
+
+  .TC1 {
+    Color: var(--Color1)
+  }
+
+  .TC2 {
+    Color: var(--Color2)
+  }
+
+  .TC3 {
+    Color: var(--Color3)
+  }
+
+  .TC4 {
+    Color: var(--Color4)
+  }
+
+  .TC5 {
+    Color:var(--Color5)
+  }
+
+  .TC6 {
+    Color: var(--Color6)
+  }
+
+  @keyframes FancyTC1Anim {
+    100%,0%{
+      color: rgb(255,0,0);
+    }
+    8%{
+      color: rgb(255,127,0);
+    }
+    16%{
+      color: rgb(255,255,0);
+    }
+    25%{
+      color: rgb(127,255,0);
+    }
+    33%{
+      color: rgb(0,255,0);
+    }
+    41%{
+      color: rgb(0,255,127);
+    }
+    50%{
+      color: rgb(0,255,255);
+    }
+    58%{
+      color: rgb(0,127,255);
+    }
+    66%{
+      color: rgb(0,0,255);
+    }
+    75%{
+      color: rgb(127,0,255);
+    }
+    83%{
+      color: rgb(255,0,255);
+    }
+    91%{
+      color: rgb(255,0,127);
+    }
+  }
+
+.FancyTC1 {
+  animation: FancyTC1Anim 10s infinite alternate;
+}
+
+@keyframes FancyTC2Anim {
+  0% {
+    Color: var(--Color1);
+  }
+  100% {
+   Color: var(--Color5);
+  }
+}
+
+
+.FancyTC2 {
+  animation: FancyTC2Anim 10s infinite alternate;
+}
+  .circle-name {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+/*
+     <div className="circle-container">
+          <div className="beveled-circle BG6"></div>
+          <div className="circle-name"><h1>Bistre</h1></div>
+        </div>
+      </div>*/

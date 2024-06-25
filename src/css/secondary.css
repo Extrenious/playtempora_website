@@ -1,171 +1,216 @@
-.Font1{
-    font-family: 'Cinzel decorative', serif;
-    font-weight: lighter;
-}
+@keyframes Font1Style1 {
+    0% {
+      Color: #4f4e4e16;
+      top: 100px; /* Adjust the value to lower the text */  
 
-.Font2 {
-    font-family: 'Cinzel', Georgia,  Times, serif;
- }
+    }
+    100% {
+        Color: #4f4e4e30;
+        top: 125px; /* Adjust the value to lower the text */  
 
-.Font3 {
-    font-family: 'Cormorant garamond', serif;
-}
-
-.Font3Bold {
-  font-family: 'Cormorant garamond', serif;
-  font-weight: Bolder;
-
-}
-
-@keyframes LogoTransition {
-  0% {
-    Color: rgb(174, 78, 0);
-    text-shadow: 2px 2px 4px 	#453e23a2;
-
+    }
   }
-  100% {
-    Color: rgb(130, 60, 3);
-    text-shadow: 4px 4px 2px 	#453e23a2;
 
-  }
+.Font1S2{
+    font-family:  'Cinzel decorative', Georgia,  Times, serif;
+    Color: rgb(139, 98, 8);
+    text-shadow: 2px 2px 3px 	#453e23a2;
+    font-size: 1.5rem;
+    font-weight: Bolder;
+    animation: LogoTransition 10s infinite alternate;
 }
-
-.Font1Style2{
-  font-family:  'Cinzel decorative', Georgia,  Times, serif;
-  Color: rgb(174, 78, 0);
-  text-shadow: 2px 2px 3px 	#453e23a2;
-  font-size: 1.5rem;
-  font-weight: Bolder;
-  animation: LogoTransition 10s infinite alternate;
-}
-
-
+  
+  
 .Font1Style1{
-  font-family:  'Cinzel decorative', Georgia,  Times, serif;
-  Color: rgb(174, 78, 0);
-  font-size: 1rem;
-  font-weight: Bolder;
+    font-family:  'Cinzel decorative', Georgia,  Times, serif;
+    Color: rgb(174, 78, 0);
+    font-size: 1rem;
+    font-weight: Bolder;
+}
+  
+  
+  .Font2Style1{
+    font-family: 'Cinzel', Georgia,  Times, serif;
+    Color: rgb(166, 93, 4);
+    font-size: 1rem;
+    font-weight: Bolder;
+  }
+
+
+
+@keyframes fadeBackground {
+    0% {
+      background-color: #B18F6A;
+    }
+    100% {
+      background-color: #f5d2ad;
+    }
+  }
+  #Homebody {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeBackground 15s infinite alternate;
+  }
+  
+ 
+  
+  @keyframes ComingSoonAnim {
+    0% {
+      Color: #4f4e4e16;
+      top: 100px; /* Adjust the value to lower the text */  
+
+    }
+    100% {
+        Color: #4f4e4e30;
+        top: 125px; /* Adjust the value to lower the text */  
+
+    }
+  }
+
+@keyframes fadeTextColor {
+    0% {
+      Color: #ffce00;
+      text-shadow: 2px 2px 3px 	#453e23a2;
+    }
+    70% {
+      Color: #e2b60a;
+      text-shadow: 2px 2px 3px 	#00000000;
+    }
+    80% {
+      Color: #e2b60a;
+      text-shadow: 2px 2px 3px 	#00000000;
+    }
+    100% {
+        Color: #d7be01;
+        text-shadow: 2px 2px 5px #ffe98798;
+    }
+  }
+
+  @keyframes fadeTextColor2 {
+    0% {
+      Color: rgb(166, 93, 4);
+      text-shadow: 1px 1px 2px 	#5f5739bb;
+    }
+    70% {
+      Color: #b26302;
+      text-shadow: 1px 1px 2px 	#00000000;
+    }
+    80% {
+      Color: rgb(211, 116, 0);
+      text-shadow: 1px 1px 2px 	#00000000;
+    }
+    100% {
+        Color: rgb(255, 142, 3);
+        text-shadow: 2px 2px 2px #f8e090;;
+    }
+  }
+
+#BigTempora {
+    text-align: center;
+    color: rgb(252, 194, 4);
+    font-family: 'Cinzel decorative', serif;
+    font-size: 8rem;
+    font-weight: lighter;
+    margin-top: 20%;
+    text-shadow: 1px 1px 1px rgba(239, 149, 24, 0.607);
+    animation: fadeTextColor 7s infinite alternate;
 }
 
-
-.Font2Style1{
-  font-family: 'Cinzel', Georgia,  Times, serif;
-  Color: rgb(166, 93, 4);
-  font-size: 1rem;
-  font-weight: Bolder;
+#MedTempora {
+    text-align: center;
+    font-family: 'Cinzel', Georgia,  Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(176, 98, 2);
+    text-shadow: 1px 1px 1px rgb(114, 114, 114);
+    animation: fadeTextColor2 7s infinite alternate;
 }
 
-      @keyframes ComingSoonAnim {
-        0% {
-          Color: #4f4e4e16;
-          top: 100px; /* Adjust the value to lower the text */  
-    
-        }
-        100% {
-            Color: #4f4e4e30;
-            top: 125px; /* Adjust the value to lower the text */  
-    
-        }
-      }
-    
-    @keyframes fadeTextColor {
-        0% {
-          Color: #ffce00;
-          text-shadow: 2px 2px 3px 	#453e23a2;
-        }
-        70% {
-          Color: #e2b60a;
-          text-shadow: 2px 2px 3px 	#00000000;
-        }
-        80% {
-          Color: #e2b60a;
-          text-shadow: 2px 2px 3px 	#00000000;
-        }
-        100% {
-            Color: #d7be01;
-            text-shadow: 2px 2px 5px #ffe98798;
-        }
-      }
-    
-      @keyframes fadeTextColor2 {
-        0% {
-          Color: rgb(166, 93, 4);
-          text-shadow: 1px 1px 2px 	#5f5739bb;
-        }
-        70% {
-          Color: rgb(178, 99, 2);
-          text-shadow: 1px 1px 2px 	#00000000;
-        }
-        80% {
-          Color: rgb(211, 116, 0);
-          text-shadow: 1px 1px 2px 	#00000000;
-        }
-        100% {
-            Color: rgb(255, 142, 3);
-            text-shadow: 2px 2px 2px #f8e090;;
-        }
-      }
-    
-    #BigTempora {
-        text-align: center;
-        color: rgb(252, 194, 4);
-        font-family: 'Cinzel decorative', serif;
-        font-size: 8rem;
-        font-weight: lighter;
-        margin-top: 20%;
-        text-shadow: 1px 1px 1px rgba(239, 149, 24, 0.607);
-        animation: fadeTextColor 7s infinite alternate;
-    }
-    
-    #MedTempora {
-        text-align: center;
-        font-family: 'Cinzel', Georgia,  Times, serif;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: rgb(176, 98, 2);
-        text-shadow: 1px 1px 1px rgb(114, 114, 114);
-        animation: fadeTextColor2 7s infinite alternate;
-    }
-    
-    #ComingSoon {
-        text-align: center;
-        position: relative;
-        font-weight: bold;
-        font-size: 2rem;
-        top: 100px; /* Adjust the value to lower the text */  
-        font-family: 'Cormorant garamond', serif;
-        animation: ComingSoonAnim 6s infinite alternate;
-    
-    }
+#ComingSoon {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 2rem;
+    top: 100px; /* Adjust the value to lower the text */  
+    font-family: 'Cinzel', Georgia,  Times, serif;
+    animation: ComingSoonAnim 6s infinite alternate;
 
-    /* src/css/primary.css */
+}
+
+/* src/css/primary.css */
 .document-viewer {
-  background-color: #ddd;
-  border: #d7be01;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+background-color: #ddd;
+border: #d7be01;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
 }
 
 #documentList {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
+width: 100%;
+max-width: 600px;
+margin-bottom: 20px;
 }
 
 .document-entry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+border: 1px solid #ddd;
+margin-bottom: 10px;
 }
 
 #documentViewer {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
+width: 100%;
+max-width: 800px;
+margin-top: 20px;
 }
+
+
+
+  
+  .nav-link:hover {
+    color: #DE7B02; /* Change color on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 60px; /* Adjust based on your navbar height */
+      left: 0;
+      right: 0;
+      background-color: #333;
+      z-index: 1000;
+      display: none; /* Hide by default on smaller screens */
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  
+    .navbar-toggler {
+      display: block; /* Show hamburger menu button */
+    }
+  
+    .navbar-toggler-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  
+    .nav-item.active {
+      background-color: #555; /* Optional: Highlight active link */
+    }
+  
+    .navbar-toggler.active ~ .navbar-nav {
+      display: flex; /* Show navbar links when toggler is active */
+    }
+  }
+  
