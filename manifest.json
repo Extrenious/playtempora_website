@@ -1,0 +1,11 @@
+{
+    "short_name": "Tempora",
+    "name": "Tempora App",
+    "icons": [
+  
+    ],
+    "theme_color": "#B18F6A",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
+  
