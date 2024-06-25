@@ -1,5 +1,5 @@
 {
-  "homepage": "http://PlayTempora.com",
+  "homepage": "PlayTempora.com",
   "name": "playtempora_website",
   "version": "0.1.0",
   "private": false,
@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "postbuild": "cp public/CNAME build/CNAME"
+
   },
   "eslintConfig": {
     "extends": [
