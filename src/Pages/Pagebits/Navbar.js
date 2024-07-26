@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light BG4">
-      <a className="navbar-brand Font1  MFont FancyTC2 " href="/Home">Tempora</a>
+      <Link className="navbar-brand Font1  MFont FancyTC2 " to="/Home">Tempora</Link>
       <button
         className="navbar-toggler"
         type="button"
