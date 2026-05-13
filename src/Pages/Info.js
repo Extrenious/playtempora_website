@@ -46,7 +46,7 @@ function Info() {
         
         <ul className="nav justify-content-center">
             <li className="nav-item">
-              <Link className="nav-link Font2Style1" to="https://docs.google.com/document/d/14zVwcz0ioYIqzQCLm5j8xsTg4V-bucgVstnvKIaMkV8/edit?usp=sharing">Tempora Development Bible </Link> <p> Game Design Document is a mess currently   </p>
+              <Link className="nav-link Font2Style1" to="https://docs.google.com/document/d/10YzIs1Oz66KbsVQe5vGsi4JUolxHKZtSkfTIm3UlrtY/edit?usp=sharing">Tempora Development Bible </Link> <p> Game Design Document is a mess currently   </p>
             </li>
           </ul>
           <div className="row">
